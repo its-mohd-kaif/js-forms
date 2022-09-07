@@ -1,14 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Js Forms</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    
-</body>
-<script src="index.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+        <form action="#">
+          <label class="age-value">Enter your age: </label><br />
+          <input
+            type="number"
+            placeholder="Type age... "
+            id="age"
+          /><br /><br />
+
+          <label class="weight-value">Enter your weight: </label><br />
+          <input
+            type="number"
+            placeholder="Type weight... "
+            id="weight"
+          /><br /><br />
+
+          <input
+            type="button"
+            value="Check"
+            id="check"
+            onClick="calculate();"
+          />
+          <h3 id="output"></h3>
+        </form>
+    </div>
+  </body>
+  <script src="index.js"></script>
 </html>
